@@ -1,0 +1,116 @@
+echo "# JJC_AUTO_PE-AS" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/uiliamchaves/JJC_AUTO_PE-AS.git
+git push -u origin main<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJC Auto Peças - Catálogo de Peças Automotivas</title>
+    <style>
+        /* Cores primárias: Azul meia-noite (#191970) e Cinza chumbo (#2F4F4F) */
+        /* Cor secundária: Amarela (#FFFF00) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2F4F4F; /* Cinza chumbo como fundo */
+            color: #FFFFFF; /* Branco para texto */
+        }
+        header {
+            background-color: #191970; /* Azul meia-noite */
+            color: #FFFF00; /* Amarela para destaque */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2F4F4F;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFFF00;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #FFFFFF;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #191970;
+            border-radius: 8px;
+        }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 10px 1%;
+            padding: 10px;
+            background-color: #2F4F4F;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            color: #FFFF00;
+        }
+        footer {
+            background-color: #191970;
+            color: #FFFF00;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JJC Auto Peças</h1>
+        <p>Seu catálogo completo de peças automotivas</p>
+    </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container" id="home">
+        <h2>Bem-vindo ao JJC Auto Peças</h2>
+        <p>Explore nosso catálogo de peças automotivas de alta qualidade. Navegue pelas categorias abaixo.</p>
+    </div>
+    <div class="container" id="catalogo">
+        <h2>Catálogo de Peças</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Filtro+de+Óleo" alt="Filtro de Óleo">
+            <h3>Filtro de Óleo</h3>
+            <p>Preço: R$ 25,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Pastilha+de+Freio" alt="Pastilha de Freio">
+            <h3>Pastilha de Freio</h3>
+            <p>Preço: R$ 80,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x150?text=Bateria+12V" alt="Bateria 12V">
+            <h3>Bateria 12V</h3>
+            <p>Preço: R$ 150,00</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+    <footer id="contato">
+        <p>Contato: (73) 99125-1828 | Email: jjautoeletrica@hotmail.com</p>
+    </footer>
+</body>
+</html>
